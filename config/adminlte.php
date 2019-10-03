@@ -30,9 +30,9 @@ return [
     |
     */
 
-    'logo' => '<b>La casa</b>',
+    'logo' => '<b>La Casa</b>',
 
-    'logo_mini' => '<b>A</b>LT',
+    'logo_mini' => '<b>LC</b>',
 
     /*
     |--------------------------------------------------------------------------
@@ -115,13 +115,19 @@ return [
                 [
                     'text' => 'Cadastro',
                     'icon'    => 'pencil',
-                    'url'  => '#',
+                    'url'  => 'cadcli',
                 ],
                
                 [
                     'text' => 'Busca',
                     'icon'    => 'search',
-                    'url'  => '#',
+                    'url'  => 'buscacli',
+                ],
+
+                [
+                    'text' => 'Edição',
+                    'icon'    => 'pencil',
+                    'url'  => 'cadcli',
                 ],
             ],
         ],
@@ -132,13 +138,13 @@ return [
                 [
                     'text' => 'Cadastro',
                     'icon'    => 'pencil',
-                    'url'  => '#',
+                    'url'  => 'cadvendas',
                 ],
                
                 [
                     'text' => 'Busca',
                     'icon'    => 'search',
-                    'url'  => '#',
+                    'url'  => 'buscavendas',
                 ],
             ],
         ],

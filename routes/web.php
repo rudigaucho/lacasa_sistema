@@ -1,23 +1,23 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
+$this->group(['middleware' => ['auth']], function(){
+    $this->get('/home', 'SistemaController@login')->name('home');
+    $this->get('/cadcli', 'SistemaController@cadcli')->name('cadcli');
+    $this->get('/buscacli', 'SistemaController@buscacli')->name('buscacli');
+    $this->get('/buscavendas', 'SistemaController@buscavendas')->name('buscavendas');
+    $this->get('/cadvendas', 'SistemaController@cadvendas')->name('cadvendas');
+    $this->post('/cadcli', 'SistemaController@cadastrandocliente')->name('cadastrandocliente');
+    $this->post('/searchcli', 'SistemaController@searchcli')->name('searchcli');
+ 
 
-Route::get('/', function () {
-    return view('welcome');
 });
+
+    $this->get('/', 'SistemaController@index'); 
+
+
 
 
 
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
